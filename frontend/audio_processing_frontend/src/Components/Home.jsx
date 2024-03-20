@@ -19,8 +19,8 @@ function Home() {
     </div>
 
     <div className='container my-5 d-flex justify-content-center gap-5'>
-      <Link style={style} to="/modeltrain"><button type="button" className="btn btn-success">Upload File</button></Link>
-      <Link style={style} to="/liverecording"><button type="button" className="btn btn-success">Live Record</button></Link>
+      <Link style={style} to="/uploadaudio"><button type="button" className="btn btn-success">Upload File</button></Link>
+      <Link style={style} to="/AudioRecorder"><button type="button" className="btn btn-success">Live Record</button></Link>
     </div>
     </>
   )

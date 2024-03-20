@@ -48,22 +48,13 @@ const UploadAudio = () => {
         });
 
         const data = await response.json();
-        console.log(data);
+        setPath1(data.file1)
+        setPath2(data.file2)
+        setIsComponentVisible(true)
       }catch (error) {
         console.error('Error processing audio:', error);
       }
-    //   let button = document.getElementById('sep');
-    //   if (selectedFile) {
-    //     // Call a function to print the name of the audio file
-    //     console.log(selectedFile.name);
-    //     // API call whic will take 1 path as input and give 2 paths as output.
-    //     setPath1("audio1.wav")
-    //     setPath2("hello")
-    //     setIsComponentVisible(true)
-    //   };
-    //   if (button.style.display !== "none") {
-    //     button.style.display = "none";
-    // };
+
     };
 
   return (

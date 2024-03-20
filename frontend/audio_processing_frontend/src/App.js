@@ -1,12 +1,12 @@
 import React from 'react'
 import Home from './Components/Home';
 import UploadAudio from './Components/UploadAudio';
-import Liverecording from './Components/Liverecording';
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
+import AudioRecorder from './Components/AudioRecorder';
 
 
 function App() {
@@ -18,11 +18,11 @@ function App() {
                 <Route exact path="/">
                   <Home/>
                 </Route>
-                <Route exact path="/modeltrain">
+                <Route exact path="/uploadaudio">
                   <UploadAudio/>
                 </Route>
-                <Route exact path="/liverecording">
-                  <Liverecording/>
+                <Route exact path="/AudioRecorder">
+                  <AudioRecorder/>
                 </Route>
             </Switch>
           </div>
